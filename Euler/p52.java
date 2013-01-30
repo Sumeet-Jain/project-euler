@@ -1,3 +1,6 @@
+// Find a number such that x, 2x, 3x, 4x, 5x, and 6x all have the same digits.
+
+
 import eulerTools.Tools;
 
 public class p52{
@@ -20,7 +23,8 @@ loop :
 // outputs: 142857
 // Nothing too new here. Just brute forced this. 
 // There are optimizations, such as only computing thing with the first digit as one, 
-// but there is no need to code these.
+// but there is no need to code these. For example, the number has to start with 1xxxxxx
+// Otherwise, 2xxxxxx * 6 = 12xxxxxx, and thus has a different number of digits.
 //
 // Forum for this one is pretty interesting. 1/7 naturally has this property. 
 //
