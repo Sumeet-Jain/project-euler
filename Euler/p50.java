@@ -1,3 +1,5 @@
+// Which prime, below one-million, can be written as the sum of the most consecutive primes?
+
 import java.util.ArrayList;
 
 public class p50{
@@ -45,3 +47,11 @@ public class p50{
 }
 
                 
+// Looking back, my method to this problem was pretty awful. In fact, I was lucky that the program even output the correect answer
+// 1.) This problem was before I changed my getPrimes method to a better version, primarily Sieve using addition.
+// 2.) I misintepreted or made the false assumption that the greatest prime would have the most consec sums
+// The answers on the forums is really neat. Generate the sum while it is below 1,000,000. Then, remove the lowest prime.
+// IF it is still not prime, remove highest prime. 
+// Then follow in the pattern 2L, 1L1H, 2H, 3L, 2L1H .... 
+// This could be found using pascals triangle, or a simple formula which increases high by one and decreases low by one. 
+// I decided not to change my answer as a reminder of the lessons learned. 
