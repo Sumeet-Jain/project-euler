@@ -2,7 +2,7 @@ import java.lang.Math;
 public class p53{
 
     // Generates a pascals triangle. 
-    // Empty = null
+    // An empty array returns 0L.
     // Begins at row 0, column 0;
     // A row column decides the choose
     // eg. row 3 column 2 = 3 Choose 2
